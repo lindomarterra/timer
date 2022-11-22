@@ -1,0 +1,77 @@
+*{ padding:0; margin: 0; box-sizing: border-box;}
+
+body{
+    background-image: linear-gradient(to top, teal, #fff);
+    min-height: 100vh;
+}
+
+header h1{ 
+    font-size: 3rem;
+    color: #222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant-caps: all-petite-caps;
+    text-shadow: 2px 2px 2px #222;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+main{
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer{
+    background-color: #222;
+    width: 90%;
+    height: auto;
+    outline-offset: 4px;
+    outline: 5px solid wheat;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 40px 40px 40px #222;
+    border-radius: 10px;
+}
+.display{
+    color: wheat;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant-caps: all-petite-caps;
+}
+button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant-caps:all-petite-caps ;
+    color: wheat;
+    font-size: 1.4rem;
+    width: 90px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+button:hover{
+    opacity: 70%;
+}
+.start{ background-color: green;}
+.pause{ background-color: grey;}
+.stop{ background-color: red;}
+
+
+
+@media screen and ( min-width: 750px) {
+    header h1{  font-size: 4rem; }
+    .timer{   width: 75%;   padding: 2rem; }
+    .display{ font-size: 4rem;}
+    button{
+    font-size: 1.7rem;
+    width: 120px;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+}
